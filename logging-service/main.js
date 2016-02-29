@@ -1,10 +1,10 @@
-//PART 1 -- 
+  //PART 1 -- 
 
-// Create an instance of the LoggingBlackBox constructor called LOGGER_SERVICE
-//    and use `.call()` to execute the logInfo method on all three objects
+// 1) Create an instance of the LoggingBlackBox constructor called LOGGER_SERVICE
+// 2) Use `.call()` to execute the logInfo method on all three objects
 
-//------------------------------------------
-// Don't touch me pls, thx
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// Don't touch anything inside here
 var LoggingBlackBox = function(superSecret){
   
   var __handleUser = function(me){
@@ -22,10 +22,6 @@ var LoggingBlackBox = function(superSecret){
 
   var __handleGender = function(self){
     return self.gender || self.sex
-  }
-
-  var __handleStatus = function(self){
-
   }
 
   var appendToDOM = function(self){
@@ -66,10 +62,6 @@ var LoggingBlackBox = function(superSecret){
   }
 }
 
-
-/////// var LOGGER_SERVICE =  new LoggingBlackBox()
-
-
 var data_Object = {
    gender: "female",
    secretKey: '38bbs9jsz2298',
@@ -108,14 +100,22 @@ var memberRecord = {
   user: 'orangelion550',
   sex: 'male'
 }
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-////// LOGGER_SERVICE.logInfo.call(data_Object)
-////// LOGGER_SERVICE.logInfo.call(record1_API_2)
-////// LOGGER_SERVICE.logInfo.call(memberRecord)
+// !!!!!!!!!!!
+// ANSWER 
+// !!!!!!!!!!!
+
+var LOGGER_SERVICE =  new LoggingBlackBox()
+
+LOGGER_SERVICE.logInfo.call(data_Object)
+LOGGER_SERVICE.logInfo.call(record1_API_2)
+LOGGER_SERVICE.logInfo.call(memberRecord)
 
 
 // PART 2 
-//    Create another object that you could pass to .call and will 'log' and 'appendToTheDOM' successfully
+//    Create another object that you could pass to .call that will 
+//   'log' and 'appendToTheDOM' successfully
 //    (Note: you will have to study the appendToDOM function inside the LoggingBlackBox constructor.)
 
 
